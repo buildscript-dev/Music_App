@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
+import com.example.musicplayer.ui.theme.PriButColor
 import com.example.musicplayer.ui.theme.PrimaryColor
 
 @Composable
@@ -29,15 +30,15 @@ fun RecBtn(
         onClick = onClick,
         shape = RoundedCornerShape(12.dp),
         colors = ButtonDefaults.buttonColors(
-            containerColor = PrimaryColor,
+            containerColor = PriButColor,
             contentColor = Color.White
         ),
         contentPadding = PaddingValues(0.dp),
         elevation = ButtonDefaults.buttonElevation(defaultElevation = 0.dp),
         modifier = Modifier
-            .width(70.dp)
-            .height(45.dp)
-            .border(width = 4.dp, color = Color.Black, shape = RoundedCornerShape(12.dp))
+            .width(68.dp)
+            .height(40.dp)
+            .border(width = 2.dp, color = Color.Black, shape = RoundedCornerShape(12.dp))
     ) {
         icon?.let {
             Icon(
@@ -60,13 +61,13 @@ fun CirBtn(
         onClick = onClick,
         shape = CircleShape,
         colors = ButtonDefaults.buttonColors(
-            containerColor = PrimaryColor,
+            containerColor = PriButColor,
             contentColor = Color.White
         ),
         contentPadding = PaddingValues(0.dp),
         elevation = ButtonDefaults.buttonElevation(defaultElevation = 0.dp),
         modifier = Modifier.size(70.dp)
-            .border(width = 4.dp, color = Color.Black, shape = CircleShape)
+            .border(width = 2.dp, color = Color.Black, shape = CircleShape)
     ) {
         icon?.let {
             Icon(

@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.musicplayer.screen.player.PlayerScreen
 import com.example.musicplayer.ui.theme.MusicPlayerTheme
 import com.example.musicplayer.ui.theme.PrimaryColor
 
@@ -27,7 +28,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MusicPlayerTheme {
-Homepage()
+                PlayerScreen()
             }
         }
         }
